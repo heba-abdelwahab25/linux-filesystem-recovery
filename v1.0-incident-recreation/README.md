@@ -5,7 +5,7 @@ The goal is to practive recovery techniques in a safe environment.
 
  1. Environment setup:
 **Disk image creation:**
-[alt sdaX.img](loop_device_creation.png)
+![alt sdaX.img](loop_device_creation.png)
 
 #2. Partitioning the Fake Disk:
 We create a GPT partition table and a single ext4 partition on the fake disk.
