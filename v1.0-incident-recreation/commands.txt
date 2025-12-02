@@ -1,0 +1,14 @@
+sudo dd if=/dev/zero of=fakeDisk.img bs=1M count=500
+sudo losetup --find --show fakeDisk.img
+sudo mkfs.ext4 /dev/loop23
+sudo mount /dev/loop23 /mnt/data_volum
+
+cd /mnt/data_volum
+sudo mkdir d_harddrive
+for i in {1..50}; do sudo dd if=/dev/zero of=file$i.txt bs=1M count=5; done
+
+sudo dd if=/dev/zero of=evilDisk.img bs=1M count=300
+sudo losetup --find --show evilDisk.img
+sudo mkfs.ext4 /dev/loop25
+sudo mount /dev/loop25 /mnt/data_volum
+
