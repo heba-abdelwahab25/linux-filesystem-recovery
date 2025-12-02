@@ -3,9 +3,9 @@ This phase simulates a real-world incident where a 600GB directory (d_harddrive)
 The goal is to practive recovery techniques in a safe environment.
 **Note:** The original directory is hidden, not deleted, when a filesystem is mounted on top.
 
- #1. Environment setup:
+ 1. Environment setup:
 **Disk image creation:**
--screenshot 1  of loop device creation (sdaX.img)-
+[alt sdaX.img](v1.0-incident-recreation/screenshots/loop_device_creation.png)
 
 #2. Partitioning the Fake Disk:
 We create a GPT partition table and a single ext4 partition on the fake disk.
