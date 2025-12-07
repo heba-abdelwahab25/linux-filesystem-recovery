@@ -1,0 +1,82 @@
+This folder contains optional raw text logs from the recovery process.
+Screenshots in the README already document the main steps.
+┌──(root㉿ari)-[/X/X/linux-filesystem-recovery/v1.1-incident-recovery]
+└─# ls -lh /home/ari/recovery/sdaX_backup.img 
+-rw-r--r-- 1 root root 5.0G Dec  5 01:28 /home/ari/recovery/sdaX_backup.img
+┌──(root㉿ari)-[/X/X/linux-filesystem-recovery/v1.1-incident-recovery]
+└─# cd ~/recovery                                     
+
+──(root㉿ari)-[/home/ari/recovery]
+└─# losetup -a | grep loop     //it lists all the loop devices but I listed the only one I am looking for
+/dev/loop23: [66307]:1895210 (/home/ari/recovery/sdaX.img)
+┌──(root㉿ari)-[/home/ari/recovery]
+└─# fsck.ext4 -n /dev/mapper/loop23p1     
+e2fsck 1.47.1 (20-May-2024)
+/dev/mapper/loop23p1: clean, 65/327680 files, 106911/1310208 blocks
+                                                                                                         
+┌──(root㉿ari)-[/home/ari/recovery]
+└─# mkdir /mnt/recovery_MP                              
+                                                                                                         
+┌──(root㉿ari)-[/home/ari/recovery]
+└─# mount -o ro /dev/mapper/loop23p1 /mnt/recovery_MP 
+
+┌──(root㉿ari)-[/home/ari/recovery]
+└─# ls -lah /mnt/recovery_MP                  
+total 28K
+drwxr-xr-x 4 root root 4.0K Dec  4 22:33 .
+drwxr-xr-x 9 root root 4.0K Dec  6 15:26 ..
+drwxr-xr-x 3 root root 4.0K Dec  4 22:37 d_harddriv
+drwx------ 2 root root  16K Dec  4 22:31 lost+found
+
+┌──(root㉿ari)-[/home/ari/recovery]
+└─# ls -R /mnt/recovery_MP /d_harddriv
+ls: cannot access '/d_harddriv': No such file or directory
+/mnt/recovery_MP:
+d_harddriv  lost+found
+
+/mnt/recovery_MP/d_harddriv:
+file1.txt   file17.txt  file24.txt  file31.txt  file39.txt  file46.txt  file8.txt
+file10.txt  file18.txt  file25.txt  file32.txt  file4.txt   file47.txt  file9.txt
+file11.txt  file19.txt  file26.txt  file33.txt  file40.txt  file48.txt  med1a
+file12.txt  file2.txt   file27.txt  file34.txt  file41.txt  file49.txt
+file13.txt  file20.txt  file28.txt  file35.txt  file42.txt  file5.txt
+file14.txt  file21.txt  file29.txt  file36.txt  file43.txt  file50.txt
+file15.txt  file22.txt  file3.txt   file37.txt  file44.txt  file6.txt
+file16.txt  file23.txt  file30.txt  file38.txt  file45.txt  file7.txt
+
+/mnt/recovery_MP/d_harddriv/med1a:
+photo.jpg
+
+/mnt/recovery_MP/lost+found:
+
+┌──(root㉿ari)-[/home/ari/recovery]
+└─# mkdir -p ~/recovery/recovered_data               
+                                                                                       
+┌──(root㉿ari)-[/home/ari/recovery]
+└─# cp -a /mnt/recovery_MP/d_harddriv ~/recovery/recovered_data/
+                                                                                       
+┌──(root㉿ari)-[/home/ari/recovery]
+└─# ls -R ~/recovery/recovered_data/d_harddriv 
+/root/recovery/recovered_data/d_harddriv:
+file1.txt   file17.txt  file24.txt  file31.txt  file39.txt  file46.txt  file8.txt
+file10.txt  file18.txt  file25.txt  file32.txt  file4.txt   file47.txt  file9.txt
+file11.txt  file19.txt  file26.txt  file33.txt  file40.txt  file48.txt  med1a
+file12.txt  file2.txt   file27.txt  file34.txt  file41.txt  file49.txt
+file13.txt  file20.txt  file28.txt  file35.txt  file42.txt  file5.txt
+file14.txt  file21.txt  file29.txt  file36.txt  file43.txt  file50.txt
+file15.txt  file22.txt  file3.txt   file37.txt  file44.txt  file6.txt
+file16.txt  file23.txt  file30.txt  file38.txt  file45.txt  file7.txt
+
+/root/recovery/recovered_data/d_harddriv/med1a:
+photo.jpg
+
+┌──(root㉿ari)-[/home/ari/recovery]
+└─# umount /mnt/recovery_MP
+                                                                                       
+┌──(root㉿ari)-[/home/ari/recovery]
+└─# kpartx -dv /dev/loop23
+del devmap : loop23p1
+                                                                                       
+┌──(root㉿ari)-[/home/ari/recovery]
+└─# losetup -d /dev/loop23                    
+                                                                                       
