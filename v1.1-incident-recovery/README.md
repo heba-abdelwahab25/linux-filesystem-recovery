@@ -5,40 +5,43 @@ This phase demonstrates the recovery of the directory ('d_harddrive') that was h
 
 **0. Backup Preparation**
 Before starting the recovery process, we create a backup of the original disk image ('sdaX.img') to ensure data integrity.
--screenshot 00-backup-image.png ls -lh of sdax.img-
+![backup-image.img](screenshots/00-backup-image.jpeg)
 
 
 **1. Attach the Disk Image as a loop Device**
 We attach the backup disk image to a loop device using *losetup*. This allows us to interact with it as if it were a real block device.
 *losetup -fP sdaX_backup.img*
--screenshot 0.1-loop-setup contains losetup -a-
+![loop-setup.img](screenshots/01_Loop_setup.jpeg)
 
 **2. Map the Partition**
 We use *kpartx* to create device mappings for the partitions inside the disk image. This maps each partition to */dev/mapper/*.
--screenshot for 02-kpartx-mapping-
+![kpartx-mapping.img](screenshots/02_kpartx_mapping.png)
 
 **3. Check Filesystem Consistency**
 Before mounting, we perform a read-only filesystem check using *fsck.ext4* to verify that the partition is clean.
--screenshot fsck-readonly-check-
+![fsck-readonly.img](screenshots/03-fsck-readonly-check.png)
 
 **4. Mount the Partition in Read-Only Mode**
 To safely access the hidden directory without risk of modifying it, we mount the mapped partition read-only.
--screenshot 04read-only mount and MP-
+![read-only.img](screenshots/04_readonly_mount.png)
+![MP.img](screenshots/MP.png)
 
 **5. Explore the Hidden Directory**
 We recursively list the hidden directory to verify the contents.
--screenshot 05datavisible-
+![data-visibility.img](screenshots/05data_visibl.png)
+
 
 **6. Copy Recovered Data**
 We safely copy the hidden directory to a local recovery folder to work with it without modifying the original image.
--screenshot 06copy-recovered files and 07 verify recovery-
+![copy-recovered.img](screenshots/06-copy_recovered_files.png)
+![verify-recovery.img](screenshots/07-verify_recovery.png)
 
 **7. Clean Up Mounts and Mappings**
 After recovery, we unmount the partition and remove the loop device mappings to avoid accidental modifications.
--screenshot 08-cleanUp-
+![cleanUp.img](screenshots/08-cleanUp.png)
 
-# Notes for those who want to recreate the incident:
-⚠️ These steps are only for learning purposes and to avoid having a tragic learning practice XD. Do **not** apply to real disks.
+# Things I have avoided while recoverying and recreation for the incident:
+These steps were only for learning purposes and to avoid having a tragic learning practice XD. I**Never** apply these steps to real disks.
 - Always work on a disk image or backup.
 - Use read-only mounts for verification whenever possible.
 - Keep clear backups before performing destructive commands like 'mkfs' or 'mount --bind'.

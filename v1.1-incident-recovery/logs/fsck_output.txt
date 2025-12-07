@@ -1,1 +1,0 @@
-/dev/mapper/loop23p1: clean, 65/327680 files, 106911/1310208 blocks
