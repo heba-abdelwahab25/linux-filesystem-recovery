@@ -1,0 +1,501 @@
+
+
+Sun Dec  7 22:43:55 2025
+Command line: TestDisk
+
+TestDisk 7.2, Data Recovery Utility, February 2024
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Linux, kernel 6.6.15-amd64 (#1 SMP PREEMPT_DYNAMIC Kali 6.6.15-2kali1 (2024-05-17)) x86_64
+Compiler: GCC 14.2
+ext2fs lib: 1.47.1, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.5
+/dev/sda: LBA, LBA48 support
+/dev/sda: size       1953525168 sectors
+/dev/sda: user_max   1953525168 sectors
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop23 - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/sda - 1000 GB / 931 GiB - CHS 121601 255 63, sector size=512 - WDC WD10SPZX-08Z, FW:1A05
+Disk /dev/mapper/loop26p1 - 5366 MB / 5118 MiB - 10481664 sectors, sector size=512
+Disk /dev/dm-1 - 5366 MB / 5118 MiB - 10481664 sectors, sector size=512
+Disk /dev/loop0 - 4775 KB / 4664 KiB - 9328 sectors (RO), sector size=512
+Disk /dev/loop1 - 58 MB / 55 MiB - 113640 sectors (RO), sector size=512
+Disk /dev/loop10 - 172 MB / 164 MiB - 337560 sectors (RO), sector size=512
+Disk /dev/loop11 - 4096 B - 8 sectors (RO), sector size=512
+Disk /dev/loop12 - 109 MB / 104 MiB - 213456 sectors (RO), sector size=512
+Disk /dev/loop13 - 96 MB / 91 MiB - 187776 sectors (RO), sector size=512
+Disk /dev/loop14 - 13 MB / 13 MiB - 26880 sectors (RO), sector size=512
+Disk /dev/loop15 - 53 MB / 50 MiB - 104296 sectors (RO), sector size=512
+Disk /dev/loop16 - 103 MB / 98 MiB - 202720 sectors (RO), sector size=512
+Disk /dev/loop17 - 53 MB / 50 MiB - 103976 sectors (RO), sector size=512
+Disk /dev/loop18 - 741 KB / 724 KiB - 1448 sectors (RO), sector size=512
+Disk /dev/loop19 - 14 MB / 13 MiB - 28072 sectors (RO), sector size=512
+Disk /dev/loop2 - 58 MB / 55 MiB - 113640 sectors (RO), sector size=512
+Disk /dev/loop20 - 317 MB / 303 MiB - 620704 sectors (RO), sector size=512
+Disk /dev/loop21 - 363 MB / 346 MiB - 710144 sectors (RO), sector size=512
+Disk /dev/loop22 - 363 MB / 346 MiB - 710424 sectors (RO), sector size=512
+Disk /dev/loop24 - 5368 MB / 5120 MiB - 10485760 sectors, sector size=512
+Disk /dev/loop24p1 - 5366 MB / 5118 MiB - 10481664 sectors, sector size=512
+Disk /dev/loop25 - 314 MB / 300 MiB - 614400 sectors, sector size=512
+Disk /dev/loop26 - 5368 MB / 5120 MiB - 10485760 sectors, sector size=512
+Disk /dev/loop26p1 - 5366 MB / 5118 MiB - 10481664 sectors, sector size=512
+Disk /dev/loop3 - 66 MB / 63 MiB - 130608 sectors (RO), sector size=512
+Disk /dev/loop4 - 66 MB / 63 MiB - 130608 sectors (RO), sector size=512
+Disk /dev/loop5 - 77 MB / 73 MiB - 151456 sectors (RO), sector size=512
+Disk /dev/loop6 - 77 MB / 73 MiB - 151368 sectors (RO), sector size=512
+Disk /dev/loop7 - 262 MB / 250 MiB - 512216 sectors (RO), sector size=512
+Disk /dev/loop8 - 262 MB / 250 MiB - 513184 sectors (RO), sector size=512
+Disk /dev/loop9 - 541 MB / 516 MiB - 1057184 sectors (RO), sector size=512
+Disk /dev/nvme0n1 - 256 GB / 238 GiB - CHS 244198 64 32, sector size=512 - UMIS RPJTJ256MEE1OWX, S/N:SS0W76181Z1CD1242475
+
+Partition table type (auto): EFI GPT
+Disk /dev/sda - 1000 GB / 931 GiB - WDC WD10SPZX-08Z
+Partition table type: Intel
+
+Analyse Disk /dev/sda - 1000 GB / 931 GiB - CHS 121601 255 63
+Geometry from i386 MBR: head=256 sector=63
+check_part_i386 1 type EE: no test
+Current partition structure:
+ 1 P EFI GPT                  0   0  2 121601  80 63 1953525167
+
+Warning: Bad ending head (CHS and LBA don't match)
+No partition is bootable
+
+search_part()
+Disk /dev/sda - 1000 GB / 931 GiB - CHS 121601 255 63
+
+recover_EXT2: s_block_group_nr=0/7, s_mnt_count=50/4294967295, s_blocks_per_group=32768, s_inodes_per_group=7632
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 243968
+recover_EXT2: part_size 1951744
+Filesystem created: Fri Sep  8 07:25:27 2023
+Last mount time:    Tue Mar  4 14:37:43 2025
+     Linux                    0  32 33   121 157 36    1951744
+     ext4 blocksize=4096 Large_file Sparse_SB, 999 MB / 953 MiB
+     Linux Swap             121 157 37   364 184 60    3905520
+     SWAP2 version 1, pagesize=4096, 1999 MB / 1906 MiB
+
+recover_EXT2: s_block_group_nr=0/137, s_mnt_count=50/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 4516608
+recover_EXT2: part_size 36132864
+Filesystem created: Fri Sep  8 07:25:28 2023
+Last mount time:    Tue Mar  4 14:37:39 2025
+     Linux                  364 185 14  2613 227 46   36132864
+     ext4 blocksize=4096 Large_file Sparse_SB, 18 GB / 17 GiB
+NTFS at 2613/227/47
+filesystem size           1765595657
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS           2613 227 47 112517  35 39 1765595657 [New Volume]
+     NTFS, blocksize=4096, 903 GB / 841 GiB
+Search for partition aborted
+
+Results
+     Linux                    0  32 33   121 157 36    1951744
+     ext4 blocksize=4096 Large_file Sparse_SB, 999 MB / 953 MiB
+     Linux Swap             121 157 37   364 185 13    3905536
+     SWAP2 version 1, pagesize=4096, 1999 MB / 1907 MiB
+     Linux                  364 185 14  2613 227 46   36132864
+     ext4 blocksize=4096 Large_file Sparse_SB, 18 GB / 17 GiB
+     HPFS - NTFS           2613 227 47 112517  59 54 1765597184 [New Volume]
+     NTFS, blocksize=4096, 903 GB / 841 GiB
+
+Hint for advanced users: dmsetup may be used if you prefer to avoid rewriting the partition table for the moment:
+echo "0 1951744 linear /dev/sda 2048" | dmsetup create test0
+echo "0 3905536 linear /dev/sda 1953792" | dmsetup create test1
+echo "0 36132864 linear /dev/sda 5859328" | dmsetup create test2
+echo "0 1765597184 linear /dev/sda 41992192" | dmsetup create test3
+
+
+dir_partition inode=2
+     Linux                    0  32 33   121 157 36    1951744
+     ext4 blocksize=4096 Large_file Sparse_SB, 999 MB / 953 MiB
+Directory /
+       2 drwxr-xr-x     0      0      4096 23-Jun-2024 15:36 .
+       2 drwxr-xr-x     0      0      4096 23-Jun-2024 15:36 ..
+      12 drwxr-xr-x     0      0      4096  8-Sep-2023 07:25 efi
+ntfs_device_testdisk_io_ioctl() unimplemented
+NTFS Volume is dirty.
+
+
+dir_partition inode=5
+     HPFS - NTFS           2613 227 47 112517  59 54 1765597184 [New Volume]
+     NTFS, blocksize=4096, 903 GB / 841 GiB
+Directory /
+       5 dr-xr-xr-x     0      0         0  7-Dec-2025 03:51 .
+       5 dr-xr-xr-x     0      0         0  7-Dec-2025 03:51 ..
+   36442 dr-xr-xr-x     0      0         0  7-Sep-2024 23:24 $AV_ASW
+      40 dr-xr-xr-x     0      0         0 27-Jun-2024 04:02 $RECYCLE.BIN
+    1886 dr-xr-xr-x     0      0         0 27-Oct-2025 10:35 BurpSuiteCommunity
+    1629 dr-xr-xr-x     0      0         0 21-Sep-2024 14:26 EASY CHIP
+   21950 dr-xr-xr-x     0      0         0 30-Jan-2024 22:42 Factorio.v1.1.104
+   39088 dr-xr-xr-x     0      0         0 30-Oct-2025 09:27 Lab 5
+     652 dr-xr-xr-x     0      0         0  1-May-2025 17:45 N5_かんじとことば
+     191 dr-xr-xr-x     0      0         0  4-Mar-2025 21:10 New folder
+     539 dr-xr-xr-x     0      0         0 21-Oct-2024 12:14 New folder (2)
+    2894 dr-xr-xr-x     0      0         0  3-Feb-2024 23:10 Program Files
+      36 dr-xr-xr-x     0      0         0  3-Feb-2024 23:10 System Volume Information
+     378 dr-xr-xr-x     0      0         0 29-Oct-2024 22:40 Telegram Desktop
+     775 dr-xr-xr-x     0      0         0  4-Oct-2025 01:19 __MACOSX
+     914 dr-xr-xr-x     0      0         0 10-Jul-2025 13:57 application
+     535 dr-xr-xr-x     0      0         0 27-Feb-2024 12:22 arduino
+     915 dr-xr-xr-x     0      0         0 30-Sep-2025 22:27 bala3
+   40626 dr-xr-xr-x     0      0         0 15-Nov-2025 12:20 basmala
+     601 dr-xr-xr-x     0      0         0 22-Oct-2015 14:30 buck-security-master
+    1491 dr-xr-xr-x     0      0         0 25-Nov-2025 00:40 c
+      39 dr-xr-xr-x     0      0         0 28-Sep-2023 18:34 course
+   85911 dr-xr-xr-x     0      0         0  2-Dec-2025 00:27 downloads
+     691 dr-xr-xr-x     0      0         0 26-May-2025 20:16 figures_heba
+   35908 dr-xr-xr-x     0      0         0  9-Sep-2024 19:08 filezilla
+    1643 dr-xr-xr-x     0      0         0 21-Nov-2025 16:56 firefox
+   40235 dr-xr-xr-x     0      0         0 20-Nov-2025 19:20 firefox.bak
+   35824 dr-xr-xr-x     0      0         0 19-Mar-2025 21:54 games
+   85431 dr-xr-xr-x     0      0         0  7-Dec-2025 22:41 linux-filesystem-recovery
+   39040 dr-xr-xr-x     0      0         0 31-Oct-2025 01:26 metasplotable
+     179 dr-xr-xr-x     0      0         0 11-Oct-2025 12:03 movies
+    1288 dr-xr-xr-x     0      0         0 19-Dec-2023 14:36 powerpuff_girls
+     224 dr-xr-xr-x     0      0         0 30-Oct-2024 10:26 project
+   86106 dr-xr-xr-x     0      0         0  3-Dec-2025 11:58 screenshots
+     271 dr-xr-xr-x     0      0         0 16-Dec-2023 09:08 sis
+    1099 dr-xr-xr-x     0      0         0  5-Sep-2025 12:29 tcpdump-lab2
+   85933 dr-xr-xr-x     0      0         0  3-Dec-2025 23:57 temp_extract_dir
+     374 dr-xr-xr-x     0      0         0 29-Oct-2024 21:18 visualization
+     843 dr-xr-xr-x     0      0         0 25-Nov-2025 00:48 zeek
+     753 -r--r--r--     0      0    843330 27-May-2025 23:32 (AI_approaches_section5) - heba.docx
+     824 -r--r--r--     0      0    102653 20-May-2025 23:50 10.1049-iet-net.2020.0078Figurentw2bf00296fig0003.pptx
+     686 -r--r--r--     0      0   1727709 30-May-2025 13:32 1257-Article Text-3814-1-10-20231231.pdf
+     989 -r--r--r--     0      0   3111369  3-Dec-2025 23:10 143-psexec-hunt.zip
+    1118 -r--r--r--     0      0    720551  8-Aug-2025 21:12 1806-315352-en-1445192.pdf
+   85421 -r--r--r--     0      0    435585  1-Dec-2025 12:36 218-BRabbit.zip
+     771 -r--r--r--     0      0     48717  9-Jul-2025 13:31 22توجيه اللغة الانجليزية.pdf
+     745 -r--r--r--     0      0    107761 27-May-2025 22:36 3605775.supp.pdf
+   86089 -r--r--r--     0      0     58138  4-Dec-2025 12:18 3ashan_elnas_elly_mesh_merawa7een.pkt
+    1765 -r--r--r--     0      0    146606  5-Nov-2025 19:20 4th year CSIT.pdf
+   86081 -r--r--r--     0      0 1092193598  4-Dec-2025 08:13 69-LGDroid.zip
+     808 -r--r--r--     0      0   6908201 20-May-2025 22:29 978-3-030-33432-1.pdf
+     856 -r--r--r--     0      0  10739373 21-May-2025 11:11 A survey on internet of vehicles Applications, security.pdf
+     678 -r--r--r--     0      0 573793406 20-Jun-2025 20:01 AES_Mix columns(1).zip
+     679 -r--r--r--     0      0 721994613 26-Mar-2024 15:57 AES_Mix columns.wmv
+     663 -r--r--r--     0      0 573793406 30-May-2025 03:10 AES_Mix columns.zip
+     963 -r--r--r--     0      0    439758 22-May-2025 02:02 AI_approaches_section5.docx
+     724 -r--r--r--     0      0   3987048 29-May-2025 16:23 AI_forPhishingDetection.pdf
+     677 -r--r--r--     0      0      2063 29-May-2025 13:56 AI_phishing_comparison_table(1).tex
+     723 -r--r--r--     0      0      2063 27-May-2025 19:28 AI_phishing_comparison_table.tex
+     714 -r--r--r--     0      0   3986524 29-May-2025 15:34 AIforPhishingDetectionSurvay.pdf
+     789 -r--r--r--     0      0   2352100 18-Sep-2025 12:49 Black and White Playful Illustrative Fun Simple Project Presentation.pptx
+     836 -r--r--r--     0      0 215843099  5-Oct-2025 14:05 Blue and Green Illustrated Children’s Rights to Education Presentation.pdf
+     821 -r--r--r--     0      0  25481335  5-Oct-2025 12:58 Blue and Green Illustrated Children’s Rights to Education Presentation.pptx
+     861 -r--r--r--     0      0  10105723  3-Oct-2025 19:52 Blue and Yellow Modern Cyber Crime Awareness Poster.mp4
+     905 -r--r--r--     0      0    460056 13-Jun-2025 22:09 CNC 2026.pdf
+     832 -r--r--r--     0      0    179169  9-Jun-2025 02:47 CNC 325 Problem Set 4.pdf
+     850 -r--r--r--     0      0     57834  9-Jun-2025 02:51 CNC 325 Problem Set 5-1.pdf
+     728 -r--r--r--     0      0     99273 19-May-2025 18:32 CNC 325 Problem Set 5.pdf
+     841 -r--r--r--     0      0    143839  9-Jun-2025 02:50 CNC 325 Problem Set 6.pdf
+     858 -r--r--r--     0      0   1955894 10-Jun-2025 14:42 CNC 325 Wireless and Mobile Networks Lecture 2.pdf
+     866 -r--r--r--     0      0   1632640 10-Jun-2025 14:43 CNC 325 Wireless and Mobile Networks Lecture 3.pdf
+     874 -r--r--r--     0      0   1419049 10-Jun-2025 14:43 CNC 325 Wireless and Mobile Networks Lecture 4.pdf
+     882 -r--r--r--     0      0   1607169 10-Jun-2025 14:44 CNC 325 Wireless and Mobile Networks Lecture 5.pdf
+     890 -r--r--r--     0      0   1568303 10-Jun-2025 14:47 CNC 325 Wireless and Mobile Networks Lecture 6.pdf
+    1051 -r--r--r--     0      0    340460 10-Jul-2025 13:39 CamScanner ١٠�-٠٧�-٢٠٢٥ ١٢.٥٨.pdf
+     979 -r--r--r--     0      0    417639 10-Jul-2025 13:30 CamScanner ١٠�-٠٧�-٢٠٢٥ ١٢.٥٨_page-0001.jpg
+    1130 -r--r--r--     0      0   1538641 15-Jun-2025 01:53 Chapter -2 introduction to HADOOP.pdf
+    1105 -r--r--r--     0      0   4899849 15-Jun-2025 01:51 Chapter -2 introduction to HADOOP.pptx
+     730 -r--r--r--     0      0    102429  2-Jun-2025 09:52 Cloud Storage Qwik Start - Cloud Console.pdf
+     675 -r--r--r--     0      0     42363 24-May-2025 13:10 Cryptography and cryptanalysis.docx
+     696 -r--r--r--     0      0    810788 23-May-2025 15:11 DOC-20240927-WA0013+(1)-1.pdf
+     705 -r--r--r--     0      0    810788 23-May-2025 15:34 DOC-20240927-WA0013+(1)-2.pdf
+     721 -r--r--r--     0      0    810788 23-May-2025 17:26 DOC-20240927-WA0013+(1)-3.pdf
+     952 -r--r--r--     0      0    810788 22-May-2025 02:01 DOC-20240927-WA0013+(1).pdf
+     672 -r--r--r--     0      0   7481972 14-May-2025 09:38 DOC-20250421-WA0007..pdf
+    1409 -r--r--r--     0      0     12288 25-Dec-2023 19:07 DumpStack.log.tmp
+     708 -r--r--r--     0      0 308243668 31-May-2025 00:39 ECC.mp4
+     659 -r--r--r--     0      0   2412918 12-May-2025 21:15 ECE 438 Problem Set 3_Solution.pdf
+     784 -r--r--r--     0      0      6314 28-May-2025 21:51 Fig1sec4.drawio
+     793 -r--r--r--     0      0     23166 28-May-2025 21:51 Fig1sec4.drawio.svg
+     706 -r--r--r--     0      0     27929 25-May-2025 19:23 Fig2h.drawio.svg
+     713 -r--r--r--     0      0     28794 25-May-2025 20:12 Fig3.drawio.svg
+     770 -r--r--r--     0      0   1008846 18-Sep-2025 12:24 Hanan LP-1.pdf
+     779 -r--r--r--     0      0   1008846 18-Sep-2025 12:24 Hanan LP-2.pdf
+     757 -r--r--r--     0      0   1008846 18-Sep-2025 11:55 Hanan LP.pdf
+     766 -r--r--r--     0      0   1003168 18-Sep-2025 11:55 Hanan- Written FB.pdf
+     755 -r--r--r--     0      0    130219 25-Jun-2025 00:03 HananHasanResume-1.pdf
+     761 -r--r--r--     0      0     31625 25-Jun-2025 00:03 HananHasanResume.docx
+     660 -r--r--r--     0      0    130219 23-May-2025 22:49 HananHasanResume.pdf
+     938 -r--r--r--     0      0    236891 10-Jul-2025 13:19 HananHasanResume.pdf-1.pdf
+     742 -r--r--r--     0      0    192181  4-Aug-2025 16:40 HananHasanResume.pdf-2.pdf
+     786 -r--r--r--     0      0    239114 25-Jun-2025 00:20 HananHasanResume.pdf.pdf
+     947 -r--r--r--     0      0    236891 10-Jul-2025 13:20 HananHassan.pdf
+     819 -r--r--r--     0      0    122726 15-Sep-2025 19:18 Hanan_Hassan-1.pdf
+     719 -r--r--r--     0      0    122726 14-Jul-2025 12:40 Hanan_Hassan.pdf
+     844 -r--r--r--     0      0   3102869 20-Sep-2025 18:45 Hanan_Hassan_Mahmoud_writingTP3.pptx
+     853 -r--r--r--     0      0  13977610 19-Oct-2025 04:12 Hanan_Hassan_Reading_Lesson_TP2(1).pptx
+     835 -r--r--r--     0      0  13977610 19-Oct-2025 04:12 Hanan_Hassan_Reading_Lesson_TP2.pptx
+     795 -r--r--r--     0      0    138988 18-Sep-2025 16:56 Hanan_Hassen1.pdf-1.pdf
+     833 -r--r--r--     0      0    136976 16-Sep-2025 00:45 Hanan_Hassen1.pdf.pdf
+     948 -r--r--r--     0      0   9222060 17-Aug-2025 11:32 Hanan_hassan_mahmoud.pptx
+     972 -r--r--r--     0      0   3981890 29-May-2025 10:59 IEEE_Conference_Template-1.pdf
+     912 -r--r--r--     0      0   3239238 29-May-2025 08:26 IEEE_Conference_Template.pdf
+     715 -r--r--r--     0      0 131480417  1-Jun-2025 12:15 IT Zatona.mp4
+     738 -r--r--r--     0      0     85174  2-Jun-2025 09:53 Implement Load Balancing on Compute Engine Challenge Lab.pdf
+     718 -r--r--r--     0      0    712371 31-Aug-2025 15:12 Intro_To_Network_Traffic_Analysis_Module_Cheat_Sheet.pdf
+    1156 -r--r--r--     0      0     19971 23-May-2025 01:07 Introduction Samir mnk llahhh(1).docx
+     608 -r--r--r--     0      0     19971 23-May-2025 13:12 Introduction Samir mnk llahhh(2).docx
+    1121 -r--r--r--     0      0     19971 23-May-2025 01:06 Introduction Samir mnk llahhh.docx
+     862 -r--r--r--     0      0   5028046 11-Oct-2025 01:32 LEcture 2V2.pdf
+     823 -r--r--r--     0      0   6235875 11-Oct-2025 01:10 LEcture 2V2.pptx
+     726 -r--r--r--     0      0         0 12-Jun-2025 19:19 Lecture 11-1.pdf
+     769 -r--r--r--     0      0   2424421 12-Jun-2025 23:37 Lecture 11-2.pdf
+     687 -r--r--r--     0      0  13064083 12-Jun-2025 18:01 Lecture 11.pptx
+    1157 -r--r--r--     0      0   2864845 15-Jun-2025 01:54 Lecture 12 IoT Security(1).pptx
+    1190 -r--r--r--     0      0   1816713 15-Jun-2025 01:55 Lecture 12 IoT Security.pdf
+    1147 -r--r--r--     0      0   2864845 15-Jun-2025 01:53 Lecture 12 IoT Security.pptx
+     681 -r--r--r--     0      0   1675488 17-May-2025 04:18 Lecture 8 - IoT Design Methodology.pdf
+     666 -r--r--r--     0      0   1473341 17-May-2025 04:15 Lecture 8 - IoT Design Methodology.pptx
+     707 -r--r--r--     0      0   1876289 27-May-2025 12:25 Lecture 8 - Storage - Part 1-1.pdf
+     673 -r--r--r--     0      0   1896724 17-May-2025 04:17 Lecture 8 - Storage - Part 1.pdf
+     702 -r--r--r--     0      0   2794815 27-May-2025 12:24 Lecture 8 - Storage - Part 1.pptx
+     867 -r--r--r--     0      0  39848584 13-Jun-2025 12:59 Lecture 8-9.cKg5mi0_.pptx.part
+     868 -r--r--r--     0      0         0 13-Jun-2025 12:48 Lecture 8-9.pptx
+    1101 -r--r--r--     0      0    172622 15-Jun-2025 01:47 Lecture 9 - IoT Platforms-ThingsBoard(1).pptx
+     689 -r--r--r--     0      0    351029 17-May-2025 04:18 Lecture 9 - IoT Platforms-ThingsBoard.pdf
+     655 -r--r--r--     0      0    172622 17-May-2025 04:15 Lecture 9 - IoT Platforms-ThingsBoard.pptx
+    1834 -r--r--r--     0      0 1002268298  1-Oct-2025 21:09 Legally.Blonde.2001.720p.BrRip.aflaam.com.mp4
+     711 -r--r--r--     0      0   1120165 23-Aug-2025 23:18 MITM.pdf
+     803 -r--r--r--     0      0   3332572 18-Sep-2025 18:28 Minimal and Simplify Fashion Business Presentation Template(1)(1).pptx
+     749 -r--r--r--     0      0  11831451 18-Sep-2025 09:09 Minimal and Simplify Fashion Business Presentation Template(1).pptx
+     845 -r--r--r--     0      0  11831451 30-Sep-2025 11:59 Minimal and Simplify Fashion Business Presentation Template(2).pptx
+     710 -r--r--r--     0      0  11831451 18-Sep-2025 09:08 Minimal and Simplify Fashion Business Presentation Template.pptx
+     818 -r--r--r--     0      0    812105  4-Jun-2025 17:17 N-Picsart-AiImageEnhancer.png
+     794 -r--r--r--     0      0     22452  4-Jun-2025 17:12 N.jpeg
+     810 -r--r--r--     0      0    112168  4-Jun-2025 17:14 N.png
+     651 -r--r--r--     0      0  24578946 10-May-2025 10:52 N5 Grammar.pdf
+    1102 -r--r--r--     0      0   2092305  2-Jul-2025 17:21 N5_かんじとことば(1).zip
+     657 -r--r--r--     0      0   2092305 10-May-2025 10:55 N5_かんじとことば.zip
+     954 -r--r--r--     0      0  14190873 14-Jun-2025 06:22 Network Security Lecture 8-9 notes.pdf
+     906 -r--r--r--     0      0    319812 17-Aug-2025 10:41 Post-Lesson Reflection (PLR).docx
+     930 -r--r--r--     0      0    290531 17-Aug-2025 11:13 Post-Lesson Reflection (PLR)1.docx
+     958 -r--r--r--     0      0    486775 17-Aug-2025 11:33 Post-Lesson Reflection (PLR)1.pdf
+     736 -r--r--r--     0      0    847921 19-May-2025 18:34 Problem Set 4-1.pdf
+     722 -r--r--r--     0      0     63334 19-May-2025 18:26 Problem set 5 solution-1.pdf
+     720 -r--r--r--     0      0     63334 19-May-2025 18:26 Problem set 5 solution.pdf
+    1202 -r--r--r--     0      0     41989 15-Jun-2025 01:56 Project-suggestion-1.pdf
+     828 -r--r--r--     0      0    137009 16-Sep-2025 00:44 Purple and White Clean and Professional Resume.pdf.pdf
+     830 -r--r--r--     0      0   7267605 30-Sep-2025 11:21 Reed · SlidesMania.pptx
+     792 -r--r--r--     0      0     14771 20-May-2025 18:50 Rule-based .docx
+     752 -r--r--r--     0      0    107695 20-May-2025 04:38 Rule-based .pdf
+     873 -r--r--r--     0      0    652598  3-Oct-2025 19:52 SS1.pdf
+     888 -r--r--r--     0      0    304610 21-May-2025 22:07 Screenshot from 2025-05-21 22-03-33(1).png
+     880 -r--r--r--     0      0    273783 21-May-2025 22:07 Screenshot from 2025-05-21 22-03-33.png
+     717 -r--r--r--     0      0    246383 12-Aug-2025 16:12 Screenshot from 2025-08-12 16-09-44-Picsart-AiImageEnhancer.png
+     740 -r--r--r--     0      0    417616 12-Aug-2025 16:23 Screenshot from 2025-08-12 16-09-44.png
+     747 -r--r--r--     0      0    930181 12-Aug-2025 17:01 Screenshot from 2025-08-12 16-57-04_PhotoGrid.png
+     650 -r--r--r--     0      0      4988  9-May-2025 20:35 Smar Greenhouse IOT project.zip
+     664 -r--r--r--     0      0   1729276  9-May-2025 23:54 Smart Greenhouse IOT System.pdf
+     665 -r--r--r--     0      0      5739 12-May-2025 21:44 Step1_TxImport.R
+     486 -r--r--r--     0      0     12970 12-May-2025 21:13 Step2_dataWrangling.R
+    1074 -r--r--r--     0      0    205002 11-May-2021 17:35 TCPDump-lab-2.pcap
+     929 -r--r--r--     0      0   1088908 14-Jun-2025 00:36 TEFL_TESOL_Student_Contract.docx
+     946 -r--r--r--     0      0    347262 14-Jun-2025 00:37 TEFL_TESOL_Student_Contract.pdf
+     704 -r--r--r--     0      0     17387 18-May-2025 11:53 Task 2.docx
+     725 -r--r--r--     0      0    111108  2-Jun-2025 08:21 Terraform Fundamentals.pdf
+    1632 -r--r--r--     0      0 401229722  1-Oct-2025 18:24 The.Vampire.Diaries.S07E09.1080p.NF.WEB-DL.mp4
+    1651 -r--r--r--     0      0 403649668  1-Oct-2025 19:04 The.Vampire.Diaries.S07E10.1080p.NF.WEB-DL.mp4
+    1655 -r--r--r--     0      0 409027573  1-Oct-2025 19:06 The.Vampire.Diaries.S07E11.1080p.NF.WEB-DL.mp4
+    1659 -r--r--r--     0      0 411336337  1-Oct-2025 19:07 The.Vampire.Diaries.S07E12.1080p.NF.WEB-DL.mp4
+    1661 -r--r--r--     0      0 413847541  1-Oct-2025 19:07 The.Vampire.Diaries.S07E13.1080p.NF.WEB-DL.mp4
+    1680 -r--r--r--     0      0 401480281  1-Oct-2025 19:44 The.Vampire.Diaries.S07E14.1080p.NF.WEB-DL.mp4
+    1682 -r--r--r--     0      0 410215943  1-Oct-2025 19:09 The.Vampire.Diaries.S07E15.1080p.NF.WEB-DL.mp4
+    1694 -r--r--r--     0      0 403956660  1-Oct-2025 19:11 The.Vampire.Diaries.S07E16.1080p.NF.WEB-DL.mp4
+    1764 -r--r--r--     0      0 412544550  1-Oct-2025 19:12 The.Vampire.Diaries.S07E17.1080p.NF.WEB-DL.mp4
+    1710 -r--r--r--     0      0 410405302  1-Oct-2025 19:12 The.Vampire.Diaries.S07E18.1080p.NF.WEB-DL.mp4
+    1713 -r--r--r--     0      0 409718932  1-Oct-2025 19:12 The.Vampire.Diaries.S07E19.1080p.NF.WEB-DL.mp4
+    1716 -r--r--r--     0      0 408079735  1-Oct-2025 19:12 The.Vampire.Diaries.S07E20.1080p.NF.WEB-DL.mp4
+    1725 -r--r--r--     0      0 412312935  1-Oct-2025 19:13 The.Vampire.Diaries.S07E21.1080p.NF.WEB-DL.mp4
+    1734 -r--r--r--     0      0 410451488  1-Oct-2025 19:13 The.Vampire.Diaries.S07E22.1080p.NF.WEB-DL.mp4
+    1785 -r--r--r--     0      0 420696146  1-Oct-2025 20:03 The.Vampire.Diaries.S08E01.1080p.NF.WEB-DL.mp4
+    1787 -r--r--r--     0      0 420127215  1-Oct-2025 19:51 The.Vampire.Diaries.S08E02.1080p.NF.WEB-DL.mp4
+    1789 -r--r--r--     0      0 411394183  1-Oct-2025 19:49 The.Vampire.Diaries.S08E03.1080p.NF.WEB-DL.mp4
+    1794 -r--r--r--     0      0 422396367  1-Oct-2025 19:50 The.Vampire.Diaries.S08E04.1080p.NF.WEB-DL.mp4
+    1796 -r--r--r--     0      0 421266954  1-Oct-2025 20:04 The.Vampire.Diaries.S08E05.1080p.NF.WEB-DL.mp4
+    1799 -r--r--r--     0      0 421782554  1-Oct-2025 20:03 The.Vampire.Diaries.S08E06.1080p.NF.WEB-DL.mp4
+    1802 -r--r--r--     0      0 419973462  1-Oct-2025 20:05 The.Vampire.Diaries.S08E07.1080p.NF.WEB-DL.mp4
+    1805 -r--r--r--     0      0 421275124  1-Oct-2025 19:53 The.Vampire.Diaries.S08E08.1080p.NF.WEB-DL.mp4
+    1807 -r--r--r--     0      0 421229801  1-Oct-2025 19:52 The.Vampire.Diaries.S08E09.1080p.NF.WEB-DL.mp4
+    1809 -r--r--r--     0      0 419811523  1-Oct-2025 20:06 The.Vampire.Diaries.S08E10.1080p.NF.WEB-DL.mp4
+    1811 -r--r--r--     0      0 419488372  1-Oct-2025 19:51 The.Vampire.Diaries.S08E11.1080p.NF.WEB-DL.mp4
+    1813 -r--r--r--     0      0 415262429  1-Oct-2025 19:53 The.Vampire.Diaries.S08E12.1080p.NF.WEB-DL.mp4
+    1817 -r--r--r--     0      0 420017144  1-Oct-2025 19:52 The.Vampire.Diaries.S08E13.1080p.NF.WEB-DL.mp4
+    1821 -r--r--r--     0      0 418253980  1-Oct-2025 19:54 The.Vampire.Diaries.S08E14.1080p.NF.WEB-DL.mp4
+    1824 -r--r--r--     0      0 421305817  1-Oct-2025 19:54 The.Vampire.Diaries.S08E15.1080p.NF.WEB-DL.mp4
+    1827 -r--r--r--     0      0 421857480  1-Oct-2025 19:54 The.Vampire.Diaries.S08E16.1080p.NF.WEB-DL.mp4
+     869 -r--r--r--     0      0     32225 13-Jun-2025 21:01 Tut13.docx
+     897 -r--r--r--     0      0    695861 13-Jun-2025 21:03 Tut13.pdf
+     826 -r--r--r--     0      0   1026601  4-Jun-2025 17:45 U-Picsart-AiImageEnhancer.png
+     802 -r--r--r--     0      0     19797  4-Jun-2025 17:12 U.jpeg
+    1028 -r--r--r--     0      0       723 22-May-2025 15:09 Untitled Diagram.drawio
+     760 -r--r--r--     0      0    291511 25-May-2025 02:26 Untitled document-1.pdf
+     754 -r--r--r--     0      0    158867 25-May-2025 23:58 Untitled document.pdf
+     777 -r--r--r--     0      0    274424  4-Jun-2025 12:17 WhatsApp Image 2025-06-03 at 12.47.31 PM (1).jpeg
+     785 -r--r--r--     0      0    247074  4-Jun-2025 12:17 WhatsApp Image 2025-06-03 at 12.47.31 PM.jpeg
+     859 -r--r--r--     0      0     43226 10-Jul-2025 11:53 WhatsApp Image 2025-07-09 at 10.03.32 PM.jpeg
+     870 -r--r--r--     0      0    667785 10-Jul-2025 11:54 WhatsApp Image 2025-07-09 at 10.03.32 PM.png
+     709 -r--r--r--     0      0   2127159 16-Jun-2025 02:30 WhatsApp Video 2025-06-16 at 2.30.00 AM.mp4
+     908 -r--r--r--     0      0    933003 28-Apr-2021 17:23 Wireshark-lab-2.pcap
+     895 -r--r--r--     0      0    752738  4-Oct-2025 01:18 Wireshark-lab-2.zip
+     881 -r--r--r--     0      0    458869 20-Oct-2025 23:18 Wireshark_DNS_v8.0.pdf
+     834 -r--r--r--     0      0   3102872 20-Sep-2025 18:45 Writing_lesson_No.1(1).pptx
+     829 -r--r--r--     0      0   3164664 20-Sep-2025 18:15 Writing_lesson_No.1.pptx
+     820 -r--r--r--     0      0   3164658 20-Sep-2025 02:52 Writing_lesson_no.1.pptx
+    1001 -r--r--r--     0      0  16464915 14-Jun-2025 23:45 [Cimawbas]Ginny.GudIxCfB.and.Georgia.S03E09.mp4.part
+    1068 -r--r--r--     0      0  12499988 14-Jun-2025 23:47 [Cimawbas]Ginny.Zd3XQFIT.and.Georgia.S03E10.Last.mp4.part
+    1100 -r--r--r--     0      0    327373 14-Jun-2025 23:47 [Cimawbas]Ginny.ZgrpFwHg.and.Georgia.S03E09(4).mp4.part
+     998 -r--r--r--     0      0         0 14-Jun-2025 19:29 [Cimawbas]Ginny.and.Georgia.S03E08.mp4
+    1086 -r--r--r--     0      0         0 14-Jun-2025 23:46 [Cimawbas]Ginny.and.Georgia.S03E09(4).mp4
+    1004 -r--r--r--     0      0         0 14-Jun-2025 19:30 [Cimawbas]Ginny.and.Georgia.S03E09.mp4
+    1070 -r--r--r--     0      0         0 14-Jun-2025 19:31 [Cimawbas]Ginny.and.Georgia.S03E10.Last.mp4
+     910 -r--r--r--     0      0      3354  4-Oct-2025 01:38 academy-regular(1).ovpn
+    1836 -r--r--r--     0      0      3354  1-Oct-2025 20:36 academy-regular.ovpn
+     928 -r--r--r--     0      0     37283 29-May-2025 09:40 accuracy.drawio.png
+     945 -r--r--r--     0      0     19960 29-May-2025 10:10 algo.drawio.svg
+     670 -r--r--r--     0      0     49516 29-May-2025 13:34 algo00o.drawio.png
+     662 -r--r--r--     0      0     80440 29-May-2025 13:21 algo0o.drawio.png
+     953 -r--r--r--     0      0     53095 29-May-2025 10:24 algoo.drawio.png
+    1642 -r--r--r--     0      0   4685710 17-Oct-2025 00:22 application.mp3
+     658 -r--r--r--     0      0    348787 11-May-2025 23:06 assignment_crypto.pdf
+     907 -r--r--r--     0      0    152495 30-Sep-2025 22:25 bala3.zip
+   39064 -r--r--r--     0      0       939 29-Oct-2025 22:54 cacert(1).der
+    1640 -r--r--r--     0      0      1326 12-Oct-2025 01:56 cacert.crt
+     847 -r--r--r--     0      0       939 29-Oct-2025 02:37 cacert.der
+     762 -r--r--r--     0      0     10982 12-Aug-2025 17:23 comment_11317057.png
+     768 -r--r--r--     0      0    291504 25-May-2025 02:31 crypto_doc.pdf
+     656 -r--r--r--     0      0     84116  9-May-2025 20:55 deepseek_mermaid_20250509_834e08.png
+    1628 -r--r--r--     0      0  21444401 12-Oct-2025 00:39 efficientnet_b0_rwightman-7f5810bc(1).pth
+    1633 -r--r--r--     0      0     68791 12-Oct-2025 00:39 effnetB0.ipynb
+    1044 -r--r--r--     0      0   2086020 22-May-2025 19:31 electronics-12-00042-v2.pdf
+    1616 -r--r--r--     0      0     14909 11-Oct-2025 18:23 enron-fraud-email-dataset-metadata.json
+     920 -r--r--r--     0      0    665464 29-May-2025 09:26 equa.jpg
+     737 -r--r--r--     0      0     30439 27-May-2025 21:47 fig1.drawio.svg
+     697 -r--r--r--     0      0     25985 25-May-2025 19:11 fig1h.drawio.svg
+     684 -r--r--r--     0      0      5458 26-May-2025 20:15 fig1h5.drawio.svg
+     776 -r--r--r--     0      0     25736 28-May-2025 20:55 fig1hup.drawio.svg
+     801 -r--r--r--     0      0    857339 28-May-2025 22:45 fig1sec4.png
+     669 -r--r--r--     0      0     41323 26-May-2025 20:02 fig2h5.drawio.svg
+     729 -r--r--r--     0      0     11930 27-May-2025 21:23 fig3.drawio.svg
+     676 -r--r--r--     0      0     42468 26-May-2025 20:13 fig3h5.drawio.svg
+     661 -r--r--r--     0      0     51639 26-May-2025 19:48 fig4h.drawio.svg
+     701 -r--r--r--     0      0     24535 26-May-2025 20:16 figures_heba.tar.gz
+     816 -r--r--r--     0      0    718928 20-May-2025 22:56 file-1.pdf
+     978 -r--r--r--     0      0    718928 22-May-2025 09:57 file-2.pdf
+     986 -r--r--r--     0      0    718928 22-May-2025 09:57 file-3.pdf
+     994 -r--r--r--     0      0    718928 22-May-2025 10:28 file-4.pdf
+     800 -r--r--r--     0      0    718928 20-May-2025 22:17 file.pdf
+     944 -r--r--r--     0      0    553850 22-May-2025 00:48 final_traditional_ways(1).docx
+     936 -r--r--r--     0      0    553831 22-May-2025 00:21 final_traditional_ways.docx
+     712 -r--r--r--     0      0    672175 23-May-2025 17:20 final_traditional_ways_final_final_final.docx
+     891 -r--r--r--     0      0  79287252 25-Oct-2025 16:23 firefox-144.0.tar.xz
+     727 -r--r--r--     0      0    227286 12-Jun-2025 19:38 gFQgXExc.pdf.part
+    1045 -r--r--r--     0      0      1224  7-Aug-2025 23:17 grep.txt
+     778 -r--r--r--     0      0      7217 12-Aug-2025 17:26 happy-mask_68299.png
+     852 -r--r--r--     0      0      1046  3-Oct-2025 17:38 icons8-google-cloud-48.png
+     685 -r--r--r--     0      0   3986878 29-May-2025 14:11 ieee.pdf
+   40392 -r--r--r--     0      0    229549 12-Nov-2025 23:25 image.png
+     788 -r--r--r--     0      0     41224 12-Aug-2025 17:49 investigation_9725225.png
+     680 -r--r--r--     0      0    183958 14-May-2025 23:05 j.ogg
+     688 -r--r--r--     0      0    178519 15-May-2025 09:47 j2.ogg
+     524 -r--r--r--     0      0 4669444096 21-Jan-2025 16:35 kali-linux-2024.3-live-amd64.iso
+   40624 -r--r--r--     0      0 4597125120 15-Nov-2025 12:29 kali-linux-2025.3-installer-amd64.iso
+     758 -r--r--r--     0      0 19961741312 20-Nov-2025 06:37 kali5ara-vm.img
+     758 -r--r--r--     0      0         0 20-Nov-2025 06:37 kali5ara-vm.img
+     758 -r--r--r--     0      0         5 20-Nov-2025 06:37 kali5ara-vm.img:ntfs-3g.trusted.libvirt.security.dac
+     758 -r--r--r--     0      0         1 20-Nov-2025 06:37 kali5ara-vm.img:ntfs-3g.trusted.libvirt.security.ref_dac
+     758 -r--r--r--     0      0        10 20-Nov-2025 06:37 kali5ara-vm.img:ntfs-3g.trusted.libvirt.security.timestamp_dac
+    1113 -r--r--r--     0      0     26701 22-May-2025 23:54 kanji.jpeg
+     716 -r--r--r--     0      0  61055472 23-Jun-2025 23:11 kupdf.net_try-n5.pdf
+     913 -r--r--r--     0      0      7102 13-Jun-2025 23:32 lab2_simple.txt
+     825 -r--r--r--     0      0    283806 28-May-2025 22:55 lamiaa(1).jpg
+     809 -r--r--r--     0      0     77816 28-May-2025 22:49 lamiaa.jpeg
+     817 -r--r--r--     0      0    179547 28-May-2025 22:51 lamiaa.jpg
+     876 -r--r--r--     0      0     24546 19-Oct-2025 04:37 lessonPlanReading-1.docx
+    1786 -r--r--r--     0      0     20027 18-Oct-2025 11:27 lessonPlanReading.docx
+    1759 -r--r--r--     0      0    167915 18-Oct-2025 11:27 lessonPlanReading.pdf
+     773 -r--r--r--     0      0      2790  6-Aug-2025 23:09 linux+(advanced)(1).txt
+   86009 -r--r--r--     0      0       163  2-Dec-2025 10:18 lookforme.txt
+    1691 -r--r--r--     0      0       198 17-Oct-2025 18:05 md5-hash-generator.txt
+     846 -r--r--r--     0      0     17588  3-Oct-2025 17:25 medal.png
+   39000 -r--r--r--     0      0    109329 29-Oct-2025 20:59 metasploit.pdf
+   38760 -r--r--r--     0      0    134386 28-Oct-2025 21:16 mo7mo7.jpeg
+     854 -r--r--r--     0      0     46448 20-Nov-2025 11:28 networklabmesh3arfakam.pkt
+    1103 -r--r--r--     0      0   1793634 10-Jul-2025 13:41 num2.pdf
+     774 -r--r--r--     0      0       582  2-Aug-2025 10:34 overthewire
+     822 -r--r--r--     0      0       193  1-Aug-2025 00:58 overthewire4
+     937 -r--r--r--     0      0     65777 29-May-2025 09:49 phishingURL.png
+     811 -r--r--r--     0      0     71226 20-Sep-2025 02:41 qr_code.png
+     748 -r--r--r--     0      0    531072  1-Sep-2025 09:32 question-1(1).zip
+     741 -r--r--r--     0      0    608977 25-Feb-2021 12:40 question-1.PNG
+     733 -r--r--r--     0      0    531072  1-Sep-2025 09:29 question-1.zip
+     682 -r--r--r--     0      0      2681 23-May-2025 13:42 referances.bib
+    1000 -r--r--r--     0      0      3795 22-May-2025 15:07 references_trad.bib
+    1183 -r--r--r--     0      0     79168 23-May-2025 01:55 resuME.pdf-1-1.pdf
+     671 -r--r--r--     0      0     81492 30-Jul-2025 23:42 resuME.pdf.pdf
+    1209 -r--r--r--     0      0     81675 15-Jun-2025 03:28 resuME.pdff.pdf
+     690 -r--r--r--     0      0    693410 23-May-2025 14:56 s10462-010-9166-x.pdf
+     744 -r--r--r--     0      0   1364904 19-May-2025 21:36 s11235-020-00733-2.pdf
+     840 -r--r--r--     0      0   1490140 21-May-2025 00:14 s13635-016-0034-3.pdf
+     756 -r--r--r--     0      0     35943 12-Aug-2025 17:21 secret_10157139.png
+    1672 -r--r--r--     0      0        40 17-Oct-2025 17:08 sha1-hash-generator(1).txt
+    1695 -r--r--r--     0      0       246 17-Oct-2025 18:07 sha1-hash-generator.txt
+     831 -r--r--r--     0      0     28374  3-Oct-2025 16:44 social.png
+     865 -r--r--r--     0      0    231826 28-May-2025 23:21 spamhaus(1).jpg
+     849 -r--r--r--     0      0     68419 28-May-2025 23:14 spamhaus.jpeg
+     857 -r--r--r--     0      0    231826 28-May-2025 23:16 spamhaus.jpg
+   85904 -r--r--r--     0      0      5236  3-Dec-2025 11:10 ssh.csv
+   85423 -r--r--r--     0      0      5223  3-Dec-2025 11:10 ssh.log
+   86103 -r--r--r--     0      0     30091  3-Dec-2025 11:09 ssh.pdf
+   86150 -r--r--r--     0      0        41  7-Dec-2025 02:39 t
+    1203 -r--r--r--     0      0    460421 10-Jul-2025 13:51 taqyeem.docx
+    1712 -r--r--r--     0      0    420160 17-Oct-2025 21:23 task1fundmentalsLab-1.pdf
+    1700 -r--r--r--     0      0    174199 17-Oct-2025 18:29 task1fundmentalsLab.pdf
+   38665 -r--r--r--     0      0   2354012 27-Oct-2025 22:38 tcpRawanino.pcapng
+   38664 -r--r--r--     0      0   1213272 27-Oct-2025 21:43 tcp_lab_rawanino.pcapng
+     763 -r--r--r--     0      0    163520  4-Sep-2025 10:39 tcpdump-lab2.zip
+    1009 -r--r--r--     0      0       596 22-May-2025 15:07 trad.tex
+     889 -r--r--r--     0      0    156064 28-May-2025 23:49 tradMethods.jpeg
+     896 -r--r--r--     0      0    935931 28-May-2025 23:52 tradMtho.jpg
+     667 -r--r--r--     0      0    657855 24-May-2025 02:45 traditional-ways.docx
+     674 -r--r--r--     0      0    657424 24-May-2025 02:46 traditional-ways.docx.tar.gz
+     864 -r--r--r--     0      0     18406 21-May-2025 13:34 traditional_ways(1).docx
+     848 -r--r--r--     0      0     18514 21-May-2025 00:19 traditional_ways.docx
+     872 -r--r--r--     0      0        13 11-Jul-2025 13:58 traditional_ways.pdf
+     904 -r--r--r--     0      0   1008180 29-May-2025 08:24 tradvisual.jpg
+     790 -r--r--r--     0      0        17  7-Aug-2025 08:32 txt.txt
+    1723 -r--r--r--     0      0 6345887744 18-Oct-2025 00:47 ubuntu-24.04.3-desktop-amd64.iso
+     782 -r--r--r--     0      0    125661  3-Oct-2025 16:40 vecteezy_linkedin-logo-png-linkedin-icon-transparent-png_18930587.png
+     668 -r--r--r--     0      0    275743 23-May-2025 13:42 word(1).docx
+     683 -r--r--r--     0      0    275743 25-May-2025 17:26 word(2).docx
+    1034 -r--r--r--     0      0    202057 22-May-2025 19:26 word.docx
+     746 -r--r--r--     0      0       165  2-Jun-2025 11:25 ~$Lecture 7- Datacenters.pptx
+     804 -r--r--r--     0      0     70907  9-Jul-2025 18:56 افادة-1.pdf
+     787 -r--r--r--     0      0     70909  9-Jul-2025 14:13 افادة.pdf
+     871 -r--r--r--     0      0    961825 30-Sep-2025 20:24 الفهرس.docx
+    1624 -r--r--r--     0      0   4478800 30-Sep-2025 23:13 بلغ.pdf
+     974 -r--r--r--     0      0   1076230 14-Jun-2025 09:52 تدريب صيفي - الجامعة اليابانية 2025 - كلية الحاسبات-2.pdf
+     739 -r--r--r--     0      0     48270 24-Jun-2025 23:49 توجيه اللغة الانجليزية-1.pdf
+     731 -r--r--r--     0      0     49018 24-Jun-2025 23:45 توجيه اللغة الانجليزية.pdf
+     703 -r--r--r--     0      0   1451969 29-May-2025 14:16 زغروطه عبله - نون🌹 (480p, h264).mp4
+     860 -r--r--r--     0      0    862581 30-Sep-2025 13:50 مقترح المشروع2-1.docx
+     783 -r--r--r--     0      0    226683 30-Sep-2025 10:35 مقترح المشروع2.docx
+
+interface_write()
+ 
+No partition found or selected for recovery
+simulate write!
+
+write_mbr_i386: starting...
+write_all_log_i386: starting...
+No extended partition
+
+TestDisk exited normally.
