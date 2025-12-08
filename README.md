@@ -11,7 +11,9 @@ Each branch and Directory represents a different phase of the learning and recov
 │                               recovering the incident, I needed to simulate it.
 
 │   ├── *README.md*: presents the steps taken, screenshots from the terminal.
+
     │
+
 │   ├──*commands.txt*: commands used.
 
 │   └── *screenshots*: collection of clear screenshots taken from the terminal for the inputs and outputs.
