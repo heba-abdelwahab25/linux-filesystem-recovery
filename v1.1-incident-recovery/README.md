@@ -10,15 +10,15 @@ Before starting the recovery process, we create a backup of the original disk im
 
 **1. Attach the Disk Image as a loop Device**
 We attach the backup disk image to a loop device using *losetup*. This allows us to interact with it as if it were a real block device.
-*losetup -fP sdaX_backup.img*
+```losetup -fP sdaX_backup.img```
 ![loop-setup.img](screenshots/01_Loop_setup.jpeg)
 
 **2. Map the Partition**
-We use *kpartx* to create device mappings for the partitions inside the disk image. This maps each partition to */dev/mapper/*.
+We use ```kpartx``` to create device mappings for the partitions inside the disk image. This maps each partition to */dev/mapper/*.
 ![kpartx-mapping.img](screenshots/02_kpartx_mapping.png)
 
 **3. Check Filesystem Consistency**
-Before mounting, we perform a read-only filesystem check using *fsck.ext4* to verify that the partition is clean.
+Before mounting, we perform a read-only filesystem check using ```fsck.ext4``` to verify that the partition is clean.
 ![fsck-readonly.img](screenshots/03-fsck-readonly-check.png)
 
 **4. Mount the Partition in Read-Only Mode**
@@ -40,7 +40,7 @@ We safely copy the hidden directory to a local recovery folder to work with it w
 After recovery, we unmount the partition and remove the loop device mappings to avoid accidental modifications.
 ![cleanUp.img](screenshots/08-cleanUp.png)
 
-# Things I have avoided while recoverying and recreation for the incident:
+##⚠️ Things I have avoided while recoverying and recreation for the incident ⚠️##
 These steps were only for learning purposes and to avoid having a tragic learning practice XD. I**Never** apply these steps to real disks.
 - Always work on a disk image or backup.
 - Use read-only mounts for verification whenever possible.
