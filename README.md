@@ -6,11 +6,11 @@ This project documents a real-world incident where a 600GB directory became inac
 ----------------------------------------------------------------------------------------------------------------------------------------
 Each branch and Directory represents a different phase of the learning and recovery process:
 
-├──**v1.0-Incident-receation**: Steps and screenshots recreating the incident for safe learning purposes. as I started this repo after  │                               recovering the incident, I needed to simulate it.
-
+├──**v1.0-Incident-receation**: Steps and screenshots recreating the incident for safe learning purposes. as I started this repo after
+│                               recovering the incident, I needed to simulate it.
 │   ├── *README.md*: presents the steps taken, screenshots from the terminal.
 │   ├──*commands.txt*: commands used.
-│   └── *screenshots*: collection of clear screenshots taken from the terminal for the inputs and outputs
+│   └── *screenshots*: collection of clear screenshots taken from the terminal for the inputs and outputsز
 ├──**v1.1-Incident-recovery**: Recovery process of the hidden directory from the backup disk image, including commands, logs, and 
 │                               screenshots. -the same where taken for the real incident-
 │   ├──*README.md*: presents the steps taken for recovery, screenshots from the terminal.
