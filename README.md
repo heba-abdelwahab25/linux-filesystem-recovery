@@ -8,7 +8,7 @@ Each branch and Directory represents a different phase of the learning and recov
 
 ├──**v1.0-Incident-receation**: Steps and screenshots recreating the incident for safe learning purposes. as I started this repo after
 
-│                               recovering the incident, I needed to simulate it.
+│                                 recovering the incident, I needed to simulate it.
 
 │   ├── *README.md*: presents the steps taken, screenshots from the terminal.
 
