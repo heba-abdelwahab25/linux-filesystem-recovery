@@ -26,7 +26,7 @@ Each branch and Directory represents a different phase of the learning and recov
 
 │   ├──*logs*: Optional raw text logs from the recovery process, Screenshots in the README document the main steps, so these logs  
 
-│             are provided for completeness and later review if needed.
+│               are provided for completeness and later review if needed.
 
 │   └──*screenshots*: Contains images captured during each step of the recovery or incident recreation.
 
