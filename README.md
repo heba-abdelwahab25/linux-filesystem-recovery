@@ -12,8 +12,6 @@ Each branch and Directory represents a different phase of the learning and recov
 
 │   ├── *README.md*: presents the steps taken, screenshots from the terminal.
 
-│
-
 │   ├──*commands.txt*: commands used.
 
 │   └── *screenshots*: collection of clear screenshots taken from the terminal for the inputs and outputs.
@@ -29,8 +27,6 @@ Each branch and Directory represents a different phase of the learning and recov
 │               are provided for completeness and later review if needed.
 
 │   └──*screenshots*: Contains images captured during each step of the recovery or incident recreation.
-
-│
 
 └──**v1.2-testdisk**: testdisk is a free open source recovery tool was super useful and supportive through the incident.
 
