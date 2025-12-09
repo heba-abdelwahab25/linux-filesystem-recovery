@@ -1,4 +1,9 @@
 In this branch, I document my experience using the amazing free recovery tool *TestDisk* to analyze and recover hidden or lost data, including lost partitions and file system structures.
+
+**⚠️ Important Safety Note**
+I learned a very important safety note in the recoverying step:
+*NEVER* recover files to their old or original path, always recovery them to a separate directory, as copying to the original location could overwrite hidden or partially recovered files, this causes permanent data loss. working on a separate path ensures the original disk or backup image remains intact for further analysis.
+
 Steps Taked:
 1. install testdisk, I use linux so I intalled it using the terminal 
 ```sudo apt upadate```
@@ -21,7 +26,3 @@ Steps Taked:
 9. testdisk displayed all recoverable files and provided options to recover either specific files or the entire list.
 
 10. I was able to view and verify the hidden files before deciding whether to copy them.
-
-**⚠️ Important Safety Note**
-I learned a very important safety note in the recoverying step:
-*NEVER* recover files to their old or original path, always recovery them to a separate directory, as copying to the original location could overwrite hidden or partially recovered files, this causes permanent data loss. working on a separate path ensures the original disk or backup image remains intact for further analysis.
