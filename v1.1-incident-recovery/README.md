@@ -2,6 +2,13 @@
 This phase demonstrates the recovery of the directory ('d_harddrive') that was hidden due to an accidental overlay of a new filesystem on top of the original directory. The goal is to practice safe recovery techniques for the incident we've recreated in the v1.0-incident-recreation section without harming the original data on my/your system.
 **Note:** The original directory is **not deleted**, only hidden when the overlaying filesystem is mounted. Recovery is performed from a **backup disk image** to ensure safety.
 
+##⚠️ Things I have avoided while recoverying and recreation for the incident ⚠️##
+These steps were only for learning purposes and to avoid having a tragic learning practice XD. I**Never** apply these steps to real disks.
+- Always work on a disk image or backup.
+- Use read-only mounts for verification whenever possible.
+- Keep clear backups before performing destructive commands like ```mkfs``` or ```mount --bind```.
+- Follow the steps in the v1.0-incident-recreation branch for exact commands and screenshots.
+  
 
 **0. Backup Preparation**
 Before starting the recovery process, we create a backup of the original disk image ('sdaX.img') to ensure data integrity.
@@ -47,11 +54,4 @@ We safely copy the hidden directory to a local recovery folder to work with it w
 After recovery, we unmount the partition and remove the loop device mappings to avoid accidental modifications.
 
 ![cleanUp.img](screenshots/08-cleanUp.png)
-
-##⚠️ Things I have avoided while recoverying and recreation for the incident ⚠️##
-These steps were only for learning purposes and to avoid having a tragic learning practice XD. I**Never** apply these steps to real disks.
-- Always work on a disk image or backup.
-- Use read-only mounts for verification whenever possible.
-- Keep clear backups before performing destructive commands like ```mkfs``` or ```mount --bind```.
-- Follow the steps in the v1.0-incident-recreation branch for exact commands and screenshots.
 
